@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    veeam-enterprise-server-exporter:
+        build: ./
+        environment:
+          - username=your-username # input all data without "" or anything
+          - password=your-password
+          - server-ip=your-server-ip
+          - port=9398
+        ports:
+            - '8000:8000'
+        
